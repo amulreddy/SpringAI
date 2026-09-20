@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: spring-ai-chatbot
+  ai:
+    openai:
+      api-key: dummy
+      base-url: http://localhost:12434/engines/v1
+      chat:
+        model: gemma3:1b
+server:
+  port: 8097
+
+logging:
+  level:
+    org.springframework.ai.chat.client.advisor: DEBUG
+
