@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: spring-ai-chatbot
+  ai:
+    openai:
+      # this is required when working with paid models like OpenAI, Anthropic etc
+      api-key: dummy
+      # When working with local models (personal models) we need to mention the LLM url
+      base-url: http://localhost:12434/engines/v1
+      chat:
+        model: gemma4:E4B
+    google:
+      genai:
+        api-key: ${GEMINI_API_KEY}
+        chat:
+          options:
+            model: gemini-3.6-flash
+            temperature: 0.3
+            max-output-tokens: 1024
+server:
+  port: 8097
+
+logging:
+  level:
+    org.springframework.ai.chat.client.advisor: DEBUG
+
