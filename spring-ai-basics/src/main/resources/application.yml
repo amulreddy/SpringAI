@@ -3,10 +3,12 @@ spring:
     name: spring-ai-chatbot
   ai:
     openai:
+      # this is required when working with paid models like OpenAI, Anthropic etc
       api-key: dummy
+      # When working with local models (personal models) we need to mention the LLM url
       base-url: http://localhost:12434/engines/v1
       chat:
-        model: gemma3:1b
+        model: huggingface.co/unsloth/gemma-4-e2b-it-qat-gguf:UD-Q4_K_XL
 server:
   port: 8097
 
