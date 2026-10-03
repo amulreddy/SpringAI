@@ -1,6 +1,6 @@
 # Spring AI Chatbot with Docker Model Runner
 
-A minimal, locally hosted AI chatbot built using **Spring Boot 3.5**, **Spring AI 2.0**, and **Docker Model Runner (DMR)**.
+A minimal, locally hosted AI Chat Application built using **Spring Boot 4.0.**, **Spring AI 2.0**, and **Docker Model Runner (DMR)**.
 
 The application uses a locally running Large Language Model (LLM) through an OpenAI-compatible API. No cloud AI APIs, external API keys, or paid inference services are required.
 
